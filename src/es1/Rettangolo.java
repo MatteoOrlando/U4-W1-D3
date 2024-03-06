@@ -2,6 +2,7 @@ package es1;
 
 public class Rettangolo {
 
+
 //    attributi privati
     private double altezza;
     private double larghezza;
@@ -13,8 +14,8 @@ public class Rettangolo {
         this.larghezza = larghezza;
     }
 
-//    metodo calcolo area e perimetro
 
+//    metodo calcolo area e perimetro
 
     public double calcolaArea() {
         return altezza * larghezza;
@@ -23,11 +24,13 @@ public class Rettangolo {
         return altezza + larghezza;
     }
 
+    //metodo per stampare i risultati di un rettangolo
     public void stampaRettangolo(){
         System.out.println("Area: " + calcolaArea());
         System.out.println("Perimetro: " + calcolaPerimetro());
     }
 
+    //metodo per stampare i risultati di due rettangoli
     public static void stampaDueRettangoli(Rettangolo rettangolo1, Rettangolo rettangolo2){
         System.out.println("Rettangolo 1: ");
         rettangolo1.stampaRettangolo();
